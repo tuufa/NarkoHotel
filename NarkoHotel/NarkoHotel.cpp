@@ -82,18 +82,6 @@ public:
         return discount > 75 ? 75 : discount;
     }
 
-    // Метод для списания бонусных баллов
-    void redeemPoints(int points)
-    {
-        if (points <= bonusPoints)
-        {
-            bonusPoints -= points;
-        }
-        else
-        {
-            cout << "Недостаточно баллов для списания.\n";
-        }
-    }
 };
 
 
